@@ -13,7 +13,7 @@ users_collection = db['approved_users']
 groups_collection = db['approved_groups']  # Collection for approved groups
 attacks_collection = db['attack_history']
 
-admins = [2067727121]
+admins = [812600476]
 active_attacks = {}  # Tracks active attacks per group {group_id: [list of active attacks]}
 cooldowns = {}
 cooldown_period = timedelta(minutes=5)  # Cooldown of 5 minutes after attack
@@ -163,7 +163,7 @@ def attack(update: Update, context: CallbackContext) -> None:
 
         # Add this attack to the list of active attacks for the group
         if chat_id not in active_attacks:
-            active_attacks[chat_id] = []
+            active_attacks[chat_id] = [-4547293098]
 
         # Store active attack details
         attack_data = {
@@ -196,7 +196,7 @@ def attack(update: Update, context: CallbackContext) -> None:
 
 def main():
     # Initialize the updater and dispatcher with your bot token
-    updater = Updater("enter bot token", use_context=True)
+    updater = Updater("7633824519:AAE-DUycE9YKRIteawHtP-dULvqU5kBss24"use_context=True)
     dispatcher = updater.dispatcher
 
     # Command handlers
